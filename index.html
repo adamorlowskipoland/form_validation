@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    
+   <div class="error" id="error"></div>
+   <div class="content">
+        <form action="" method="get" name="order" id="order">
+            <ul>
+                <li>
+                    <label for="product">Produkt Name:</label>
+                    <div><input type="text" name="product" id="product"></div>
+                </li>
+                <li>
+                    <label for="quantity">Quantity:</label>
+                    <div><input type="text" name="" id="quantity"></div>
+                </li>
+                <li>
+                    <label for="name">Imię:</label>
+                    <div><input type="text" name="name" id="name"></div>
+                </li>
+                <li>
+                    <label for="lastname">Last Name:</label>
+                    <div><input type="text" name="lastname" id="lastname"></div>
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <div><input type="text" name="email" id="email"></div>
+                </li>
+                <li>
+                    <label for="address">Address:</label>
+                    <div><textarea type="text" name="address" id="address"></textarea></div>
+                </li>
+                <li>
+                    <label for="regulations">I accept regulations:</label>
+                    <div><input type="checkbox" name="regulations" id="regulations"></div>
+                </li>
+            </ul>
+            <div class="send"><input type="submit" name="send" value="SEND" id="send"></div>
+        </form>
+    </div>
     
     <script src="script.js"></script>
 </body>
